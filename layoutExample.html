@@ -3,25 +3,116 @@
 <head>
     <title>Layout Example</title>
     <style>
+        body{
+            margin: 0px;
+        }
         #header {
-            background-color: #F1F1F1;
+            background-color: #f2b98f;
             text-align: center;
             padding: 20px;
         }
         #header img {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
         }
         #header h1{
             margin-top: 0px;
+            margin-bottom: 0px;
+            color: #4f2e17;
         }
+        .topnav {
+            display: flex;
+            justify-content: center; 
+            background-color:#c98859;
+        }
+        .topnav a {
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover {
+            background-color: #4f2e17;
+            color: white;
+        }
+        .row {
+            display: flex;
+            justify-content: space-around;
+        }
+        .column {
+            width: 30%;
+        }
+        h2{
+            text-align: center;
+        }
+        .column p {
+            text-align: justify;
+        }
+        #column1 {
+            width: 25%;
+        }
+        #roasting h2,p {
+            text-align: center;
+        }
+        .sidecolumn {
+            width: 20%;
+        }
+        .sidecolumn img {
+            width: 90%;
+        }
+        .maincolumn {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .maincolumn img {
+            width: 90%;
+        }
+
     </style>
 </head>
 <body>
     <div id="container">
         <div id="header">
-            <img src="image/logo.jpg" alt="logo">
-            <h1>Header</h1>
+            <img src="image/logo.png" alt="logo">
+            <h1>Monster Coffee</h1>
+        </div>
+        <div class="topnav">
+            <a href="#">Latte Art</a>
+            <a href="#">Signature Coffee</a>
+            <a href="#">Roasting</a>
+        </div>   
+        <div class="row">
+            <div class="column" >
+                <h2>Latte Art</h2>
+                <p>Latte art is a method of preparing coffee created by pouring microfoam into a shot of espresso and resulting in a pattern or design on the surface of the latte. It can also be created or embellished by simply "drawing" in the top layer of foam. Latte art is particularly difficult to create consistently, due to the demanding conditions required of both the espresso shot and milk. This, in turn, is limited by the experience of the barista and quality of the espresso machine. The term also applies to other beverages containing milk foam, such as cappuccino and hot chocolate.</p>
+            </div>
+            <div class="column" id=”column1”>
+                <h2>Signature Coffee</h2>
+                <p>A Signature drink is any unique or original drink that expresses the nature of the person or establishment creating it.
+                Signature drinks often incorporate local ingredients and culture. They can be fashioned or designed to represent a theme or color. Many cultures, states, cities, restaurants, bars, etc. have Signature drinks that represent the customs and prides of the people who live in the area or near the establishments boasting the unique beverage.</p>
+            </div>
+        </div>    
+        <div class="row">
+            <div class="column" id="roasting">
+                <h2>Roasting</h2>
+                <p>Coffee roasting begins with green coffee beans, which themselves have been processed and dried. Temperatures are raised progressively from about 180 to 250 °C (356 to 482 °F) and heated for anywhere from 7 to 20 minutes, depending on the type of roast, light or dark, desired.</p>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="sidecolumn">
+                <h2>Latte Art</h2>
+                <img src="image/comboArt1.jpg" alt="Combo Latte Art">
+            </div>
+            <div class="maincolumn">
+                <h2>Signature Coffee</h2>
+                <img src="image/signature.jpg" alt="Signature Coffee">
+            </div>
+            <div class="sidecolumn">
+                <h2>Roasting</h2>
+                <img src="image/roasting2.jpg" alt="Roasting">
+            </div>
         </div>
     </div>
 </body>
